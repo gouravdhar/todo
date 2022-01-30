@@ -8,11 +8,17 @@ export const TodoItem = (props) => {
                    checked={todo.isDone}
                    readOnly
             />
-            {todo.isDone
+            {/* {todo.isDone
                 ?
                 <strike>{todo.description + ' ' + todo.category}</strike>
                 :
-                todo.description + ' ' + todo.category}
+                todo.description + ' ' + todo.category} */}
+
+            {todo.isDone
+                ?
+                <strike>{todo.description}</strike>
+                :
+                todo.description}
         </li>
     );
 };
